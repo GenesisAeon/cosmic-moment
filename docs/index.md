@@ -1,37 +1,73 @@
-# Diamond Setup
+# cosmic-moment
 
-**Universal Python project scaffold** — generate professional, CI-ready project skeletons in seconds.
+**Discrete moments of cosmic emergence** — the fractal singularities where modulated entropy duality collapses into conscious presence.
 
-No cookiecutter, no Jinja2, no magic. Just a clean CLI, sensible templates, and a validator that keeps your projects healthy.
+[![CI](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/cosmic-moment)](https://pypi.org/project/cosmic-moment/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/GenesisAeon/cosmic-moment/blob/main/LICENSE)
 
-## Quickstart
+Built directly on **medium-modulation**, **entropy-governance**, **entropy-table** and **implosive-genesis** chronology.
+
+---
+
+## Install
 
 ```bash
-pip install diamond-setup
-# or with uv:
-uv tool install diamond-setup
+pip install cosmic-moment
 ```
+
+## Quick start (CLI)
 
 ```bash
-diamond scaffold my-new-tool
-cd my-new-tool && uv sync --dev && uv run pytest
+cm detect --threshold 0.618
+cm collapse --t 3.14
 ```
 
-## Why Diamond Setup?
+## Quick start (Python)
 
-| Feature | diamond-setup | cookiecutter | copier |
-|---------|:---:|:---:|:---:|
-| Zero config needed | ✅ | ❌ | ❌ |
-| Built-in validator | ✅ | ❌ | ❌ |
-| Pure Python templates | ✅ | ❌ | ❌ |
-| `--dry-run` support | ✅ | ❌ | ✅ |
-| Extensible presets | ✅ | ✅ | ✅ |
+```python
+from cosmic_moment.core import CosmicMoment
 
-## Commands
+cm = CosmicMoment()
+moments = cm.detect(threshold=0.618, steps=100)
+print(f"Detected {len(moments)} cosmic moments")
 
-| Command | Description |
-|---------|-------------|
-| `diamond scaffold <name>` | Create a new project |
-| `diamond list-templates` | Show available templates |
-| `diamond validate [path]` | Check a project's health |
-| `diamond version` | Show version |
+frame = cm.collapse(moments[0])
+print(frame)
+# {'timestamp': 0.101, 'collapsed': True, 'new_layer': 'consciousness'}
+```
+
+## Stack integration
+
+| Package | Role |
+|---------|------|
+| `medium-modulation` | `modulated_entropy` — core S∝A ↔ S∝V duality signal |
+| `implosive-genesis` | `ChronologyValidator` — 10-part chronology check |
+| `entropy-governance` | governance constraints on entropy flow |
+| `entropy-table` | `EntropyTable` — domain relation persistence |
+
+## Project structure
+
+```
+cosmic-moment/
+├── pyproject.toml
+├── README.md
+├── domains.yaml
+├── src/
+│   └── cosmic_moment/
+│       ├── __init__.py
+│       ├── core.py                  # CosmicMoment + collapse detection
+│       ├── cli.py                   # Typer CLI (cm)
+│       └── entropy_table_bridge.py  # EntropyTable integration
+├── tests/
+│   ├── test_core.py
+│   └── test_cli.py
+└── mkdocs.yml
+```
+
+---
+
+**PyPI**: <https://pypi.org/project/cosmic-moment/>
+
+Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/) · [SymPy](https://www.sympy.org/)

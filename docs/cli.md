@@ -1,88 +1,64 @@
 # CLI Reference
 
-## `diamond scaffold`
+The `cm` entrypoint provides two commands for observing and simulating cosmic moments.
 
-Create a new project from a template.
+---
+
+## `cm detect`
+
+Detect collapse points where `modulated_entropy(S_A, S_V)` exceeds the given threshold.
 
 ```
-Usage: diamond scaffold [OPTIONS] PROJECT_NAME
-
-Arguments:
-  PROJECT_NAME  Name of the new project (kebab-case recommended)
+Usage: cm detect [OPTIONS]
 
 Options:
-  -t, --template TEXT       Template to use [default: minimal]
-  -o, --output-dir PATH     Parent directory for the new project
-  --author TEXT             Author name
-  --description TEXT        Short project description
-  --python-version TEXT     Minimum Python version (e.g. 3.11)
-  --dry-run                 Preview files without writing them
+  --threshold FLOAT   Collapse detection threshold [default: 0.618]
+  --steps INTEGER     Number of time steps to evaluate [default: 100]
+  --help              Show this message and exit.
 ```
 
 **Examples**
 
 ```bash
-# Minimal project in the current directory
-diamond scaffold my-lib
+# Default: golden-ratio threshold, 100 steps
+cm detect
 
-# Genesis preset with custom author
-diamond scaffold my-physics-tool --template genesis --author "Ada Lovelace"
+# Custom threshold
+cm detect --threshold 0.5
 
-# Preview what would be created
-diamond scaffold my-lib --dry-run
-
-# Output to a specific directory
-diamond scaffold my-lib --output-dir ~/projects
+# Higher resolution scan
+cm detect --threshold 0.618 --steps 500
 ```
 
 ---
 
-## `diamond list-templates`
+## `cm collapse`
 
-List all available templates with their descriptions.
+Trigger a frame collapse at a given time coordinate and record the event.
+
+```
+Usage: cm collapse [OPTIONS]
+
+Options:
+  --t FLOAT   Time coordinate of the collapse [default: 3.14]
+  --help      Show this message and exit.
+```
+
+**Examples**
 
 ```bash
-diamond list-templates
+# Default collapse at π
+cm collapse
+
+# Collapse at a specific moment
+cm collapse --t 6.28
 ```
 
 ---
 
-## `diamond validate`
+## Summary
 
-Validate a project directory against diamond-setup best practices.
-
-```
-Usage: diamond validate [PATH]
-
-Arguments:
-  PATH  Project directory to validate [default: current directory]
-```
-
-Checks performed:
-
-| Check | Level |
-|-------|-------|
-| `pyproject.toml` present | **Error** |
-| `src/` layout present | Warning |
-| `tests/` directory present | Warning |
-| `.github/workflows/` present | Warning |
-| `README.md` present | Warning |
-| `.gitignore` present | Warning |
-
-```bash
-# Validate the current directory
-diamond validate
-
-# Validate a specific project
-diamond validate path/to/my-project
-```
-
----
-
-## `diamond version`
-
-Print the installed version.
-
-```bash
-diamond version
-```
+| Command | Description |
+|---------|-------------|
+| `cm detect [--threshold FLOAT] [--steps INT]` | Detect collapse points where modulated duality exceeds threshold |
+| `cm collapse [--t FLOAT]` | Trigger frame collapse at a cosmic moment |
