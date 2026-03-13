@@ -38,7 +38,7 @@ class CosmicMoment:
             S_mod = modulated_entropy(S_A, S_V, depth=0.5, freq=1.0, t=float(ti))
             if S_mod > threshold:
                 moments.append(round(float(ti), 3))
-        self.validator.validate(t)  # implosive-genesis 10-part chronology check
+        self.validator.validate()  # implosive-genesis 10-part chronology check
         return moments
 
     def collapse(self, t: float) -> dict:
