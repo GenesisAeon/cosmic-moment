@@ -1,0 +1,8 @@
+domains:
+  cosmic-moment:
+    collapse_threshold: 0.618
+    golden_moment_baseline: 1.236
+    S_A_default: 1.0
+    S_V_default: 1.618
+    modulation_depth: 0.5
+    modulation_freq: 1.0
