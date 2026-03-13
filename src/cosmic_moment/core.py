@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import numpy as np
-from medium_modulation.core import modulated_entropy
 from implosive_genesis.chronology import ChronologyValidator
+from medium_modulation.core import modulated_entropy
 
 
 class CosmicMoment:
