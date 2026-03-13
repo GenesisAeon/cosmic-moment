@@ -1,84 +1,80 @@
-# diamond-setup
+# cosmic-moment
 
-**Universal Python project scaffold** — generate professional, CI-ready skeletons in seconds.
+**Discrete moments of cosmic emergence** — the fractal singularities where modulated entropy duality collapses into conscious presence.
 
-[![CI](https://github.com/GenesisAeon/diamond-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/diamond-setup/actions/workflows/ci.yml)
+[![CI](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/cosmic-moment)](https://pypi.org/project/cosmic-moment/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-No cookiecutter, no Jinja2, no magic. Just a clean CLI that produces a fully working project — `uv sync`, `pytest`, ruff, pre-commit and CI all wired up from second one.
+Built directly on **medium-modulation**, **entropy-governance** and **implosive-genesis** chronology.
 
 ---
 
 ## Install
 
 ```bash
-pip install diamond-setup
-# or
-uv tool install diamond-setup
+pip install cosmic-moment
 ```
 
 ## Usage
 
 ```bash
-# New project with the minimal template (default)
-diamond scaffold my-lib
-
-# GenesisAeon preset (adds domains.yaml + entropy-table bridge)
-diamond scaffold my-physics-tool --template genesis --author "Ada Lovelace"
-
-# Preview what would be generated (no files written)
-diamond scaffold my-lib --dry-run
-
-# See all templates
-diamond list-templates
-
-# Validate any project directory
-diamond validate path/to/my-project
-diamond validate          # validates the current directory
+cm detect --threshold 0.618
+cm collapse --t 3.14
 ```
 
-## What you get
+## Quick start (Python)
 
-Running `diamond scaffold my-lib` produces:
+```python
+from cosmic_moment.core import CosmicMoment
+
+cm = CosmicMoment()
+moments = cm.detect(threshold=0.618, steps=100)
+print(f"Detected {len(moments)} cosmic moments")
+
+frame = cm.collapse(moments[0])
+print(frame)
+```
+
+## CLI Reference
+
+| Command | Description |
+|---------|-------------|
+| `cm detect [--threshold FLOAT] [--steps INT]` | Detect collapse points where modulated duality exceeds threshold |
+| `cm collapse [--t FLOAT]` | Trigger frame collapse at a cosmic moment |
+
+## Stack integration
+
+| Package | Role |
+|---------|------|
+| `medium-modulation` | `modulated_entropy` — core S∝A ↔ S∝V duality signal |
+| `implosive-genesis` | `ChronologyValidator` — 10-part chronology check |
+| `entropy-governance` | governance constraints on entropy flow |
+| `entropy-table` | `EntropyTable` — domain relation persistence |
+
+## Project structure
 
 ```
-my-lib/
-├── src/
-│   └── my_lib/
-│       └── __init__.py       # __version__ = "0.1.0"
-├── tests/
-│   ├── __init__.py
-│   └── test_main.py
-├── .github/
-│   └── workflows/
-│       └── ci.yml            # matrix: 3.11 + 3.12
-├── pyproject.toml            # hatchling, ruff, pytest configured
+cosmic-moment/
+├── pyproject.toml
 ├── README.md
-├── .gitignore
-└── .pre-commit-config.yaml   # ruff + standard hooks
+├── domains.yaml
+├── src/
+│   └── cosmic_moment/
+│       ├── __init__.py
+│       ├── core.py                  # CosmicMoment + collapse detection
+│       ├── cli.py                   # Typer CLI (cm)
+│       └── entropy_table_bridge.py  # EntropyTable integration
+├── tests/
+│   ├── test_core.py
+│   └── test_cli.py
+└── mkdocs.yml
 ```
-
-Then just:
-
-```bash
-cd my-lib
-uv sync --dev
-pre-commit install
-uv run pytest
-```
-
-## Templates
-
-| Template | Description |
-|----------|-------------|
-| `minimal` | Clean Python package for everyone |
-| `genesis` | Adds `domains.yaml` + entropy-table bridge (GenesisAeon preset) |
-
-## Extending
-
-Adding a new template is one Python file. See [docs/templates.md](docs/templates.md).
 
 ---
 
-Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/)
+**DOI** (after Zenodo release): 10.5281/zenodo.XXXXXXX
+**PyPI**: https://pypi.org/project/cosmic-moment/
+
+Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/) · [SymPy](https://www.sympy.org/)
