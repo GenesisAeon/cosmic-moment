@@ -17,6 +17,8 @@ Built directly on **medium-modulation**, **entropy-governance** and **implosive-
 pip install cosmic-moment
 ```
 
+**DOI**: [10.5281/zenodo.19010800](https://doi.org/10.5281/zenodo.19010800)   **PyPI**: `pip install cosmic-moment==0.1.0`  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19010800.svg)](https://doi.org/10.5281/zenodo.19010800)
+
 ## Usage
 
 ```bash
@@ -74,7 +76,5 @@ cosmic-moment/
 
 ---
 
-**DOI** (after Zenodo release): 10.5281/zenodo.XXXXXXX
-**PyPI**: https://pypi.org/project/cosmic-moment/
 
 Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/) · [SymPy](https://www.sympy.org/)
