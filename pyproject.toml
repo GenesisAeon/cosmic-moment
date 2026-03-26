@@ -1,7 +1,7 @@
-[project]
+﻿[project]
 name = "cosmic-moment"
-version = "0.1.0"
-description = "Discrete moments of cosmic emergence – the singular points where modulated entropy duality collapses into conscious frames."
+version = "0.3.1"
+description = "Discrete moments of cosmic emergence â€“ the singular points where modulated entropy duality collapses into conscious frames."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -63,3 +63,4 @@ addopts = "--cov=cosmic_moment --cov-report=term-missing -v"
 [tool.coverage.run]
 source = ["src"]
 omit = ["tests/*"]
+
