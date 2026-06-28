@@ -56,6 +56,10 @@ ignore = ["B008"]  # typer uses function calls in defaults
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101"]  # allow assert in tests
 
+[[tool.mypy.overrides]]
+module = ["entropy_table.*", "implosive_genesis.*", "medium_modulation.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--cov=cosmic_moment --cov-report=term-missing -v"
