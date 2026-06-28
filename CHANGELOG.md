@@ -17,6 +17,12 @@ All notable changes to `cosmic-moment` are documented here.
   ecosystem v1.0.0 milestone: version bumped to `1.0.0`, dependency pins
   raised to `medium-modulation>=1.0.0`, `entropy-governance>=1.0.0`,
   `entropy-table>=2.0.0`, `implosive-genesis>=1.0.0`.
+- **Relicensed** from MIT to dual-license: source code under
+  GPL-3.0-or-later (`LICENSE-CODE`), documentation under CC BY 4.0
+  (`LICENSE-DOCS`).
+- Fixed CI: added `mypy` to the `dev` extra, installed the `docs` extra
+  in the docs job, and dropped Python 3.10 from the test matrix (the
+  package requires Python >=3.11).
 
 ## [0.1.0] – 2026-03-13
 

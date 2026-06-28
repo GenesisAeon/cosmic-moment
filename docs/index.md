@@ -5,7 +5,8 @@
 [![CI](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/cosmic-moment)](https://pypi.org/project/cosmic-moment/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/GenesisAeon/cosmic-moment/blob/main/LICENSE)
+[![License: GPL v3+](https://img.shields.io/badge/code-GPLv3--or--later-blue.svg)](https://github.com/GenesisAeon/cosmic-moment/blob/main/LICENSE-CODE)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](https://github.com/GenesisAeon/cosmic-moment/blob/main/LICENSE-DOCS)
 
 Built directly on **medium-modulation**, **entropy-governance**, **entropy-table** and **implosive-genesis** chronology.
 
