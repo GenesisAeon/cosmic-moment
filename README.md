@@ -11,7 +11,7 @@ Built directly on **medium-modulation**, **entropy-governance** and **implosive-
 
 ---
 
-## Install
+## Installation
 
 ```bash
 pip install cosmic-moment
@@ -78,3 +78,19 @@ cosmic-moment/
 
 
 Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/) · [SymPy](https://www.sympy.org/)
+
+## Role in the GenesisAeon Ecosystem
+
+`cosmic-moment` is **P-MOMENT** within the GenesisAeon ecosystem, covering
+the domain of discrete cosmic collapse events — the singular points where
+modulated entropy duality (from `medium-modulation`) collapses into
+conscious frames, validated against `implosive-genesis` chronology and
+`entropy-governance` constraints.
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+
+DOI will be assigned automatically on first GitHub Release once
+Zenodo–GitHub integration is enabled for this repo.
+

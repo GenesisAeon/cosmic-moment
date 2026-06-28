@@ -4,6 +4,20 @@ All notable changes to `cosmic-moment` are documented here.
 
 ---
 
+## [1.0.0] – 2026-06-28
+
+### Added
+
+- Standardized ecosystem release tooling: `.zenodo.json`, `RELEASE_GUIDE.md`,
+  `CONTRIBUTING.md`, issue/PR templates.
+
+### Changed
+
+- Project metadata (`pyproject.toml`) normalized for the GenesisAeon
+  ecosystem v1.0.0 milestone: version bumped to `1.0.0`, dependency pins
+  raised to `medium-modulation>=1.0.0`, `entropy-governance>=1.0.0`,
+  `entropy-table>=2.0.0`, `implosive-genesis>=1.0.0`.
+
 ## [0.1.0] – 2026-03-13
 
 **First Cosmic Moments of Emergence**
