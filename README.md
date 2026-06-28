@@ -5,13 +5,14 @@
 [![CI](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/cosmic-moment/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/cosmic-moment)](https://pypi.org/project/cosmic-moment/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPL v3+](https://img.shields.io/badge/code-GPLv3--or--later-blue.svg)](LICENSE-CODE)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS)
 
 Built directly on **medium-modulation**, **entropy-governance** and **implosive-genesis** chronology.
 
 ---
 
-## Install
+## Installation
 
 ```bash
 pip install cosmic-moment
@@ -78,3 +79,28 @@ cosmic-moment/
 
 
 Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/) · [SymPy](https://www.sympy.org/)
+
+## Role in the GenesisAeon Ecosystem
+
+`cosmic-moment` is **P-MOMENT** within the GenesisAeon ecosystem, covering
+the domain of discrete cosmic collapse events — the singular points where
+modulated entropy duality (from `medium-modulation`) collapses into
+conscious frames, validated against `implosive-genesis` chronology and
+`entropy-governance` constraints.
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+
+DOI will be assigned automatically on first GitHub Release once
+Zenodo–GitHub integration is enabled for this repo.
+
+## License
+
+This repository is dual-licensed:
+
+- **Source code** — [GPL-3.0-or-later](LICENSE-CODE)
+- **Documentation** — [CC BY 4.0](LICENSE-DOCS)
+
+See [LICENSE](LICENSE) for details on which license applies to which files.
+
