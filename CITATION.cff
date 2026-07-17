@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "cosmic-moment"
+version: "1.0.0"
+date-released: "2026-06-28"
+authors:
+  - name: "GenesisAeon Team"
+    email: team@genesisaeon.org
+repository-code: "https://github.com/GenesisAeon/cosmic-moment"
+license: GPL-3.0-or-later
+abstract: "Discrete moments of cosmic emergence - the singular points where modulated entropy duality collapses into conscious frames."
+keywords:
+  - GenesisAeon
+  - UTAC
+  - CREP
+  - open-science
+  - entropy
+  - emergence
+  - cosmology
+  - modulation
