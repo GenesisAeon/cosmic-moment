@@ -41,6 +41,33 @@ def test_collapse_returns_dict():
     assert result["new_layer"] == "consciousness"
 
 
+def test_detect_default_threshold_is_selective():
+    """Regression test: the previous hardcoded default threshold (0.618) sat
+    below the formula's achievable minimum (~0.927), so every t was always
+    detected regardless of modulation. The corrected default must genuinely
+    filter out at least some points (see cosmic-moment-blindtest)."""
+    cm = CosmicMoment()
+    moments = cm.detect(steps=200)
+    assert 0 < len(moments) < 200
+
+
+def test_collapse_varies_with_t():
+    """Regression test: collapsed/new_layer were previously hardcoded
+    constants regardless of t. Near the modulation's minimum (t=-pi/2) it
+    must be False/"dormant"; near its maximum (t=pi/2) it must be
+    True/"consciousness"."""
+    import math
+
+    cm = CosmicMoment()
+    low = cm.collapse(-math.pi / 2)
+    high = cm.collapse(math.pi / 2)
+    assert low["collapsed"] is False
+    assert low["new_layer"] == "dormant"
+    assert high["collapsed"] is True
+    assert high["new_layer"] == "consciousness"
+    assert high["S_mod"] > low["S_mod"]
+
+
 def test_collapse_appends_to_history():
     cm = CosmicMoment()
     cm.collapse(1.0)
