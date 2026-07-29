@@ -57,7 +57,8 @@ class CosmicMoment:
             S_mod = modulated_entropy(S_A, S_V, depth=0.5, freq=1.0, t=float(ti))
             if S_mod > threshold:
                 moments.append(round(float(ti), 3))
-        chronology = self.validator.validate()  # implosive-genesis 10-part chronology check
+        # implosive-genesis 10-part chronology check
+        chronology = self.validator.validate()
         if not chronology.passed:
             raise RuntimeError(
                 f"implosive-genesis chronology validation failed "

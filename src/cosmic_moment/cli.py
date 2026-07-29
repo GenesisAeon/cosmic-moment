@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import io
 import sys
 
 import typer
@@ -12,8 +13,9 @@ from .core import CosmicMoment
 # Windows consoles default to a non-UTF-8 codepage, which breaks the arrow
 # and other math symbols used in this CLI's output with UnicodeEncodeError.
 # Force UTF-8 stdout/stderr so behavior matches Linux/macOS terminals.
-if hasattr(sys.stdout, "reconfigure"):
+if isinstance(sys.stdout, io.TextIOWrapper):
     sys.stdout.reconfigure(encoding="utf-8")
+if isinstance(sys.stderr, io.TextIOWrapper):
     sys.stderr.reconfigure(encoding="utf-8")
 
 app = typer.Typer(help="Cosmic Moment CLI – discrete points of cosmic self-awareness.")
@@ -33,7 +35,9 @@ def detect(
 ) -> None:
     """Detect cosmic moments of emergence."""
     moments = _cm.detect(threshold=threshold, steps=steps)
-    console.print(f"[bold magenta]Detected {len(moments)} cosmic moment(s)[/]", highlight=False)
+    console.print(
+        f"[bold magenta]Detected {len(moments)} cosmic moment(s)[/]", highlight=False
+    )
     if moments:
         console.print(f"First at t = {moments[0]}", highlight=False)
 
@@ -53,7 +57,8 @@ def collapse(
     else:
         console.print(
             f"[bold yellow]No collapse at t={result['timestamp']:.3f}[/] "
-            f"(S_mod={result['S_mod']:.4f} below baseline, layer stays {result['new_layer']})",
+            f"(S_mod={result['S_mod']:.4f} below baseline, "
+            f"layer stays {result['new_layer']})",
             highlight=False,
         )
 
