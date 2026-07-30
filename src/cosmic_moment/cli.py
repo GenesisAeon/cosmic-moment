@@ -63,5 +63,24 @@ def collapse(
         )
 
 
+@app.command()
+def export(
+    output: str = typer.Option(
+        "domains.yaml", "--output", "-o", help="Output YAML path."
+    ),
+) -> None:
+    """Export cosmic-moment relations to entropy-table via the optional dependency.
+
+    Requires: pip install entropy-table
+    """
+    from .entropy_table_bridge import CosmicMomentBridge
+
+    bridge = CosmicMomentBridge()
+    moments = _cm.detect()
+    bridge.add_moment("moment_count", float(len(moments)))
+    path = bridge.export(output)
+    console.print(f"[bold green]Exported to {path}[/]")
+
+
 if __name__ == "__main__":
     app()
