@@ -18,7 +18,7 @@ Built directly on **medium-modulation**, **entropy-governance** and **implosive-
 pip install cosmic-moment
 ```
 
-**DOI**: [10.5281/zenodo.19010800](https://doi.org/10.5281/zenodo.19010800)   **PyPI**: `pip install cosmic-moment==0.1.0`  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19010800.svg)](https://doi.org/10.5281/zenodo.19010800)
+**DOI**: [10.5281/zenodo.20993596](https://doi.org/10.5281/zenodo.20993596)   **PyPI**: `pip install cosmic-moment==0.1.0`  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20993596.svg)](https://doi.org/10.5281/zenodo.20993596)
 
 ## Usage
 
@@ -90,10 +90,7 @@ conscious frames, validated against `implosive-genesis` chronology and
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
-
-DOI will be assigned automatically on first GitHub Release once
-Zenodo–GitHub integration is enabled for this repo.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20993596.svg)](https://doi.org/10.5281/zenodo.20993596)
 
 ## License
 
