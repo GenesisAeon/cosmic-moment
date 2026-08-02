@@ -7,6 +7,7 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: GPL v3+](https://img.shields.io/badge/code-GPLv3--or--later-blue.svg)](LICENSE-CODE)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS)
+[![GenesisAeon Package](https://img.shields.io/badge/GenesisAeon-P76-blueviolet.svg)](https://github.com/GenesisAeon)
 
 Built directly on **medium-modulation**, **entropy-governance** and **implosive-genesis** chronology.
 
